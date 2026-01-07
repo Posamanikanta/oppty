@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #head-icons {
+        display: flex;
+        gap: 20px;
+        padding-right: 20px;
+    }
+
+    #head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: rgb(224, 224, 239);
+    }
+    #nav{
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
+
+    }
+    #full{
+        display: flex;
+    }
+    a{
+        margin:7px;
+        text-decoration: none;
+        
+        height:25px;
+        width:50%;
+
+    }
+    a:hover{
+        background-color: rgb(116, 243, 243);
+
+    }
+    img{
+        border:2px solid black;
+        margin:10px;
+        padding: 10px;
+
+    }
+    p{
+        font-size: larger;
+    }
+    
+    table{
+
+        width:100%;
+    }
+    tr,td{
+        border:1px solid black;
+        text-align: center;
+        font-size: large;
+    }
+    th{
+        border:1px solid black;
+        background-color: aqua;
+
+    }
+    #sideB{
+        padding-left:20px;
+        border-left:1px solid black
+
+    }
+    #sideA{
+        padding-right: 20px;    }
+    #footer{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(13, 13, 108, 0.463);
+    }
+
+</style>
+
+<body>
+    <div id="head">
+        <div id="heading">
+            <h1 style="padding-left: 10px;">Mr. Camel</h1>
+        </div>
+        <div id="head-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
+    <!-- part1 -->
+    <div id="full">
+        <div id="sideA">
+            <div id="img">
+                <img src="data:image/jpeg;base64,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"
+                    alt="camel">
+            </div>
+            <div id="nav">
+                <a href="#">Home</a>
+                <a href="#">Career</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+            </div>
+            <div id="content1">
+                <p>"DO Something important in life. i convert green grass to code."</p>
+                &nbsp;- Mr Camel
+            </div>
+        </div>
+        <!-- part2 -->
+        <div id="sideB">
+            <div id="About">
+                <h2>About Me</h2>
+                <p>I dont look like some handsome horse,but i am a real desert king. i can service days without water.</p>
+            </div>
+            <div id="My career">
+                <h2>My Career</h2>
+                <p> i work as a wed developer for a company that makes websites for camel bussiness.</p>
+            </div>
+            <hr>
+            <br>
+            <br>
+            <h2>How Can I Help You?</h2>
+            <table>
+                <tr>
+                    <th>Skill1</th>
+                    <th>Skill2</th>
+                    <th>Skill3</th>
+                </tr>
+                <tr>
+                    <td><i class="fa-brands fa-facebook"></i></td>
+                    <td><i class="fa-brands fa-facebook"></i></td>
+                    <td><i class="fa-brands fa-facebook"></i></td>
+                </tr>
+                <tr>
+                    <td>Cleaning kaktus in your backyard.</td>
+                    <td>storing some fat for you.</td>
+                    <td>taking you through the desert.</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <label for="email" name="email">Email:</label>
+            <input type="email"><br><br>
+            <label for="mobile" name="mobile">Mobile:</label>
+            <input type="number"><br><br>
+            <textarea placeholder="Enter your message"></textarea><br><br>
+            <button>Submit</button><br><br>
+
+        </div>
+    </div>
+    <div id="footer">
+        <p>Copyright Mr.Camel</p>
+    </div>
+</body>
+
+</html>
